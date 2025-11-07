@@ -6,18 +6,17 @@ Instalace knihoven
 Všechny knihovny nainstalované ve vytvořeném virtuálním prostředí jsou uvedeny v souboru requirements.txt. Pro jejich instalaci je z důvodu zachování aktuálnosti verzí doporučeno vytvořit virtuální prostředí a s nainstalovaným manažerem spustit především následující:
 pip  --version 				#ověří verzi manažeru (pip 25.3, python3.13)
 pip install -r requirements.txt		#nainstaluje knihovny uvedené v souboru     
-
 Spuštění projektu
-Spuštění projektu tedy souboru main.py v rámci příkazového řádku požaduje jeden argument a jeden parametr ( – o) s argumentem. 
+Spuštění projektu tedy souboru main.py v rámci příkazového řádku požaduje 2 argumenty. 
 Zadání pro spuštění bude tedy pro uvedený případ vypadat takto:
-python main.py  <odkaz – územního-celku> - o <výsledný-soubor>
+python main.py  <odkaz – územního-celku>  <výsledný-soubor>
 Následně se výsledky stáhnou jako soubor s příponou.csv .
 Ukázka projektu
 Prvním argumentem je odkaz na územní celek, který získáte po kliknutí na jeho kód nebo na X – výběr obce. Např. pro uzemní úroveň Olomoucký kraj – Prostějov – CZ0713 je odkaz:
 https://www.volby.cz/pls/ps2017nss/ps311?xjazyk=CZ&xkraj=12&xnumnuts=7103
-Druhým argumentem je název výstupního souboru s příponou .csv, do kterého budou zapisovány výstupy.
+Druhým argumentem je název výstupního souboru s příponou .csv, do kterého budou zapisovány výstupy. Pozor nezapomeňte na mezeru mezi argumenty.
 Spuštění programu:
- python main.py  'htpps://volby.cz/pls/ps2017nss/ps311?xjazyk=CZ&xkraj=12&xnumnuts=7103' -o 'vysledky_prostejov.csv'
+python main.py  'htpps://volby.cz/pls/ps2017nss/ps311?xjazyk=CZ&xkraj=12&xnumnuts=7103'   'vysledky_prostejov.csv'
 Průběh stahování:
 STAHUJI DATA Z VYBRANÉHO URL: ‘htpps://volby.cz/pls/ps2017nss/ps311?xjazyk=CZ&xkraj=12&xnumnuts=7103‘
 UKLADAM DO SOUBORU: výsledky_prostejov.csv
